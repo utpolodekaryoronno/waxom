@@ -1,7 +1,29 @@
 $('document').ready(function(){
+
+    $('.menu-bar').click(function(){
+        $('.menu').slideToggle();
+        // $(this).hide();
+        // $('.menu').addClass('open');
+       
+    });
+
     // all-Selection
     // wow.js
     new WOW().init();  
+
+
+    // Banner owlCarousel
+    $(".banner_main").owlCarousel({
+        responsive: true,
+        loop:true,
+        nav:true,
+        dots:true,
+        // autoplay:true,
+        slideSpeed : 200,
+        items:1,
+       
+
+    });
 
     // service-area
     // owlCarousel
